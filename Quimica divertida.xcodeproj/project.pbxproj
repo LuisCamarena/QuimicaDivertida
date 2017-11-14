@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE19258EB280DE7B250F0F62 /* Pods_Quimica_divertida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42658487CE06876D9FD27BB7 /* Pods_Quimica_divertida.framework */; };
 		E2EB5C511FBA649100F5E749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB5C501FBA649100F5E749 /* AppDelegate.swift */; };
 		E2EB5C531FBA649100F5E749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB5C521FBA649100F5E749 /* ViewController.swift */; };
 		E2EB5C561FBA649100F5E749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C541FBA649100F5E749 /* Main.storyboard */; };
 		E2EB5C581FBA649100F5E749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C571FBA649100F5E749 /* Assets.xcassets */; };
 		E2EB5C5B1FBA649100F5E749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C591FBA649100F5E749 /* LaunchScreen.storyboard */; };
+		E2EB5C631FBA688700F5E749 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C621FBA688700F5E749 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323289478B394A813D66ED10 /* Pods-Quimica divertida.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quimica divertida.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida.debug.xcconfig"; sourceTree = "<group>"; };
+		42658487CE06876D9FD27BB7 /* Pods_Quimica_divertida.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quimica_divertida.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6065EF3592AE9FD6CC973E61 /* Pods-Quimica divertida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quimica divertida.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida.release.xcconfig"; sourceTree = "<group>"; };
 		E2EB5C4D1FBA649100F5E749 /* Quimica divertida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quimica divertida.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EB5C501FBA649100F5E749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2EB5C521FBA649100F5E749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		E2EB5C571FBA649100F5E749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EB5C5A1FBA649100F5E749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EB5C5C1FBA649100F5E749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EB5C621FBA688700F5E749 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE19258EB280DE7B250F0F62 /* Pods_Quimica_divertida.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65344CB445BF3BFE26F30EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42658487CE06876D9FD27BB7 /* Pods_Quimica_divertida.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2EB5C441FBA649000F5E749 = {
 			isa = PBXGroup;
 			children = (
 				E2EB5C4F1FBA649100F5E749 /* Quimica divertida */,
 				E2EB5C4E1FBA649100F5E749 /* Products */,
+				F02FF70F4AD8DA59F1A21D25 /* Pods */,
+				65344CB445BF3BFE26F30EA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				E2EB5C571FBA649100F5E749 /* Assets.xcassets */,
 				E2EB5C591FBA649100F5E749 /* LaunchScreen.storyboard */,
 				E2EB5C5C1FBA649100F5E749 /* Info.plist */,
+				E2EB5C621FBA688700F5E749 /* GoogleService-Info.plist */,
 			);
 			path = "Quimica divertida";
+			sourceTree = "<group>";
+		};
+		F02FF70F4AD8DA59F1A21D25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				323289478B394A813D66ED10 /* Pods-Quimica divertida.debug.xcconfig */,
+				6065EF3592AE9FD6CC973E61 /* Pods-Quimica divertida.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2EB5C5F1FBA649100F5E749 /* Build configuration list for PBXNativeTarget "Quimica divertida" */;
 			buildPhases = (
+				CC3F754BFE5D31C9D1A3A4F7 /* [CP] Check Pods Manifest.lock */,
 				E2EB5C491FBA649100F5E749 /* Sources */,
 				E2EB5C4A1FBA649100F5E749 /* Frameworks */,
 				E2EB5C4B1FBA649100F5E749 /* Resources */,
+				A4A9137C5DB1FFDCC5973E80 /* [CP] Embed Pods Frameworks */,
+				9A50FE12AEB4673C44FA13C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EB5C5B1FBA649100F5E749 /* LaunchScreen.storyboard in Resources */,
+				E2EB5C631FBA688700F5E749 /* GoogleService-Info.plist in Resources */,
 				E2EB5C581FBA649100F5E749 /* Assets.xcassets in Resources */,
 				E2EB5C561FBA649100F5E749 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A50FE12AEB4673C44FA13C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A9137C5DB1FFDCC5973E80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3F754BFE5D31C9D1A3A4F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quimica divertida-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2EB5C491FBA649100F5E749 /* Sources */ = {
@@ -259,6 +346,7 @@
 		};
 		E2EB5C601FBA649100F5E749 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323289478B394A813D66ED10 /* Pods-Quimica divertida.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F2B4VF9QNR;
@@ -272,6 +360,7 @@
 		};
 		E2EB5C611FBA649100F5E749 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6065EF3592AE9FD6CC973E61 /* Pods-Quimica divertida.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F2B4VF9QNR;
