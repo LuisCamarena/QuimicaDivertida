@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE19258EB280DE7B250F0F62 /* Pods_Quimica_divertida.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42658487CE06876D9FD27BB7 /* Pods_Quimica_divertida.framework */; };
 		E2EB5C511FBA649100F5E749 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB5C501FBA649100F5E749 /* AppDelegate.swift */; };
-		E2EB5C531FBA649100F5E749 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB5C521FBA649100F5E749 /* ViewController.swift */; };
+		E2EB5C531FBA649100F5E749 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EB5C521FBA649100F5E749 /* iniciarSesionViewController.swift */; };
 		E2EB5C561FBA649100F5E749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C541FBA649100F5E749 /* Main.storyboard */; };
 		E2EB5C581FBA649100F5E749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C571FBA649100F5E749 /* Assets.xcassets */; };
 		E2EB5C5B1FBA649100F5E749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5C591FBA649100F5E749 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		6065EF3592AE9FD6CC973E61 /* Pods-Quimica divertida.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quimica divertida.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida.release.xcconfig"; sourceTree = "<group>"; };
 		E2EB5C4D1FBA649100F5E749 /* Quimica divertida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quimica divertida.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EB5C501FBA649100F5E749 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2EB5C521FBA649100F5E749 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2EB5C521FBA649100F5E749 /* iniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iniciarSesionViewController.swift; sourceTree = "<group>"; };
 		E2EB5C551FBA649100F5E749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EB5C571FBA649100F5E749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EB5C5A1FBA649100F5E749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E2EB5C501FBA649100F5E749 /* AppDelegate.swift */,
-				E2EB5C521FBA649100F5E749 /* ViewController.swift */,
+				E2EB5C521FBA649100F5E749 /* iniciarSesionViewController.swift */,
 				E2EB5C541FBA649100F5E749 /* Main.storyboard */,
 				E2EB5C571FBA649100F5E749 /* Assets.xcassets */,
 				E2EB5C591FBA649100F5E749 /* LaunchScreen.storyboard */,
@@ -186,12 +186,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Quimica divertida/Pods-Quimica divertida-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,7 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EB5C531FBA649100F5E749 /* ViewController.swift in Sources */,
+				E2EB5C531FBA649100F5E749 /* iniciarSesionViewController.swift in Sources */,
 				E2EB5C511FBA649100F5E749 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +395,7 @@
 				E2EB5C611FBA649100F5E749 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
